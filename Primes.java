@@ -13,14 +13,14 @@ public class Primes {
                 }
             }
         }
-        System.out.println("prime numbers up to " +n +":");
+        System.out.println("Prime numbers up to " +n +":");
         for (int i=2; i <= n; i++){
             if (primes[i]){
                 System.out.println(i);
                 counter ++;
             }
         }
-        double percent = (100.0* counter)/(n-1);
-        System.out.println("There are "+counter+ " primes between 2 and " +n+ " ( "+percent +" are primes)");
+        int percent = (100* counter)/n;
+        System.out.println("There are " + counter + " primes between 2 and " + n + " ( "+ percent +"% are primes)");
     }
 }
